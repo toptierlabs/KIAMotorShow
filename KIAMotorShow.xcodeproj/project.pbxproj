@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B480DE015053AE40062743F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B480DDF15053AE40062743F /* UIKit.framework */; };
+		9B480DE215053AE40062743F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B480DE115053AE40062743F /* Foundation.framework */; };
+		9B480DE415053AE40062743F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B480DE315053AE40062743F /* CoreGraphics.framework */; };
+		9B480DEA15053AE40062743F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B480DE815053AE40062743F /* InfoPlist.strings */; };
+		9B480DEC15053AE40062743F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480DEB15053AE40062743F /* main.m */; };
+		9B480DF015053AE40062743F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480DEF15053AE40062743F /* AppDelegate.m */; };
+		9B480DF315053AE40062743F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B480DF115053AE40062743F /* MainStoryboard.storyboard */; };
+		9B480DF615053AE40062743F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480DF515053AE40062743F /* ViewController.m */; };
+		9B480DFE15053AE40062743F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B480DFD15053AE40062743F /* SenTestingKit.framework */; };
+		9B480DFF15053AE40062743F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B480DDF15053AE40062743F /* UIKit.framework */; };
+		9B480E0015053AE40062743F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B480DE115053AE40062743F /* Foundation.framework */; };
+		9B480E0815053AE40062743F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E0615053AE40062743F /* InfoPlist.strings */; };
+		9B480E0B15053AE50062743F /* KIAMotorShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480E0A15053AE50062743F /* KIAMotorShowTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B480E0115053AE40062743F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B480DD215053AE40062743F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B480DDA15053AE40062743F;
+			remoteInfo = KIAMotorShow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B480DDB15053AE40062743F /* KIAMotorShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIAMotorShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B480DDF15053AE40062743F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9B480DE115053AE40062743F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9B480DE315053AE40062743F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9B480DE715053AE40062743F /* KIAMotorShow-Info.plist */ = {isa = PBXFileReference; path = "KIAMotorShow-Info.plist"; sourceTree = "<group>"; };
+		9B480DE915053AE40062743F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9B480DEB15053AE40062743F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B480DED15053AE40062743F /* KIAMotorShow-Prefix.pch */ = {isa = PBXFileReference; path = "KIAMotorShow-Prefix.pch"; sourceTree = "<group>"; };
+		9B480DEE15053AE40062743F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B480DEF15053AE40062743F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B480DF215053AE40062743F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9B480DF415053AE40062743F /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		9B480DF515053AE40062743F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B480DFC15053AE40062743F /* KIAMotorShowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIAMotorShowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B480DFD15053AE40062743F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9B480E0515053AE40062743F /* KIAMotorShowTests-Info.plist */ = {isa = PBXFileReference; path = "KIAMotorShowTests-Info.plist"; sourceTree = "<group>"; };
+		9B480E0715053AE40062743F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9B480E0915053AE50062743F /* KIAMotorShowTests.h */ = {isa = PBXFileReference; path = KIAMotorShowTests.h; sourceTree = "<group>"; };
+		9B480E0A15053AE50062743F /* KIAMotorShowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAMotorShowTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B480DD815053AE40062743F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B480DE015053AE40062743F /* UIKit.framework in Frameworks */,
+				9B480DE215053AE40062743F /* Foundation.framework in Frameworks */,
+				9B480DE415053AE40062743F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B480DF815053AE40062743F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B480DFE15053AE40062743F /* SenTestingKit.framework in Frameworks */,
+				9B480DFF15053AE40062743F /* UIKit.framework in Frameworks */,
+				9B480E0015053AE40062743F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B480DD015053AE40062743F = {
+			isa = PBXGroup;
+			children = (
+				9B480DE515053AE40062743F /* KIAMotorShow */,
+				9B480E0315053AE40062743F /* KIAMotorShowTests */,
+				9B480DDE15053AE40062743F /* Frameworks */,
+				9B480DDC15053AE40062743F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B480DDC15053AE40062743F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B480DDB15053AE40062743F /* KIAMotorShow.app */,
+				9B480DFC15053AE40062743F /* KIAMotorShowTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B480DDE15053AE40062743F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B480DDF15053AE40062743F /* UIKit.framework */,
+				9B480DE115053AE40062743F /* Foundation.framework */,
+				9B480DE315053AE40062743F /* CoreGraphics.framework */,
+				9B480DFD15053AE40062743F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B480DE515053AE40062743F /* KIAMotorShow */ = {
+			isa = PBXGroup;
+			children = (
+				9B480DEE15053AE40062743F /* AppDelegate.h */,
+				9B480DEF15053AE40062743F /* AppDelegate.m */,
+				9B480DF115053AE40062743F /* MainStoryboard.storyboard */,
+				9B480DF415053AE40062743F /* ViewController.h */,
+				9B480DF515053AE40062743F /* ViewController.m */,
+				9B480DE615053AE40062743F /* Supporting Files */,
+			);
+			path = KIAMotorShow;
+			sourceTree = "<group>";
+		};
+		9B480DE615053AE40062743F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B480DE715053AE40062743F /* KIAMotorShow-Info.plist */,
+				9B480DE815053AE40062743F /* InfoPlist.strings */,
+				9B480DEB15053AE40062743F /* main.m */,
+				9B480DED15053AE40062743F /* KIAMotorShow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B480E0315053AE40062743F /* KIAMotorShowTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B480E0915053AE50062743F /* KIAMotorShowTests.h */,
+				9B480E0A15053AE50062743F /* KIAMotorShowTests.m */,
+				9B480E0415053AE40062743F /* Supporting Files */,
+			);
+			path = KIAMotorShowTests;
+			sourceTree = "<group>";
+		};
+		9B480E0415053AE40062743F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B480E0515053AE40062743F /* KIAMotorShowTests-Info.plist */,
+				9B480E0615053AE40062743F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B480DDA15053AE40062743F /* KIAMotorShow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B480E0E15053AE50062743F /* Build configuration list for PBXNativeTarget "KIAMotorShow" */;
+			buildPhases = (
+				9B480DD715053AE40062743F /* Sources */,
+				9B480DD815053AE40062743F /* Frameworks */,
+				9B480DD915053AE40062743F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIAMotorShow;
+			productName = KIAMotorShow;
+			productReference = 9B480DDB15053AE40062743F /* KIAMotorShow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B480DFB15053AE40062743F /* KIAMotorShowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B480E1115053AE50062743F /* Build configuration list for PBXNativeTarget "KIAMotorShowTests" */;
+			buildPhases = (
+				9B480DF715053AE40062743F /* Sources */,
+				9B480DF815053AE40062743F /* Frameworks */,
+				9B480DF915053AE40062743F /* Resources */,
+				9B480DFA15053AE40062743F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B480E0215053AE40062743F /* PBXTargetDependency */,
+			);
+			name = KIAMotorShowTests;
+			productName = KIAMotorShowTests;
+			productReference = 9B480DFC15053AE40062743F /* KIAMotorShowTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B480DD215053AE40062743F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9B480DD515053AE40062743F /* Build configuration list for PBXProject "KIAMotorShow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9B480DD015053AE40062743F;
+			productRefGroup = 9B480DDC15053AE40062743F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B480DDA15053AE40062743F /* KIAMotorShow */,
+				9B480DFB15053AE40062743F /* KIAMotorShowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B480DD915053AE40062743F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B480DEA15053AE40062743F /* InfoPlist.strings in Resources */,
+				9B480DF315053AE40062743F /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B480DF915053AE40062743F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B480E0815053AE40062743F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B480DFA15053AE40062743F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B480DD715053AE40062743F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B480DEC15053AE40062743F /* main.m in Sources */,
+				9B480DF015053AE40062743F /* AppDelegate.m in Sources */,
+				9B480DF615053AE40062743F /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B480DF715053AE40062743F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B480E0B15053AE50062743F /* KIAMotorShowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B480E0215053AE40062743F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B480DDA15053AE40062743F /* KIAMotorShow */;
+			targetProxy = 9B480E0115053AE40062743F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B480DE815053AE40062743F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B480DE915053AE40062743F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9B480DF115053AE40062743F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B480DF215053AE40062743F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		9B480E0615053AE40062743F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B480E0715053AE40062743F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B480E0C15053AE50062743F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9B480E0D15053AE50062743F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B480E0F15053AE50062743F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIAMotorShow/KIAMotorShow-Prefix.pch";
+				INFOPLIST_FILE = "KIAMotorShow/KIAMotorShow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9B480E1015053AE50062743F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIAMotorShow/KIAMotorShow-Prefix.pch";
+				INFOPLIST_FILE = "KIAMotorShow/KIAMotorShow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9B480E1215053AE50062743F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIAMotorShow.app/KIAMotorShow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIAMotorShow/KIAMotorShow-Prefix.pch";
+				INFOPLIST_FILE = "KIAMotorShowTests/KIAMotorShowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9B480E1315053AE50062743F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIAMotorShow.app/KIAMotorShow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIAMotorShow/KIAMotorShow-Prefix.pch";
+				INFOPLIST_FILE = "KIAMotorShowTests/KIAMotorShowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B480DD515053AE40062743F /* Build configuration list for PBXProject "KIAMotorShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B480E0C15053AE50062743F /* Debug */,
+				9B480E0D15053AE50062743F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B480E0E15053AE50062743F /* Build configuration list for PBXNativeTarget "KIAMotorShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B480E0F15053AE50062743F /* Debug */,
+				9B480E1015053AE50062743F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9B480E1115053AE50062743F /* Build configuration list for PBXNativeTarget "KIAMotorShowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B480E1215053AE50062743F /* Debug */,
+				9B480E1315053AE50062743F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B480DD215053AE40062743F /* Project object */;
+}
