@@ -14,12 +14,38 @@
 		9B480DEC15053AE40062743F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480DEB15053AE40062743F /* main.m */; };
 		9B480DF015053AE40062743F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480DEF15053AE40062743F /* AppDelegate.m */; };
 		9B480DF315053AE40062743F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B480DF115053AE40062743F /* MainStoryboard.storyboard */; };
-		9B480DF615053AE40062743F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480DF515053AE40062743F /* ViewController.m */; };
 		9B480DFE15053AE40062743F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B480DFD15053AE40062743F /* SenTestingKit.framework */; };
 		9B480DFF15053AE40062743F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B480DDF15053AE40062743F /* UIKit.framework */; };
 		9B480E0015053AE40062743F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B480DE115053AE40062743F /* Foundation.framework */; };
 		9B480E0815053AE40062743F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E0615053AE40062743F /* InfoPlist.strings */; };
 		9B480E0B15053AE50062743F /* KIAMotorShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480E0A15053AE50062743F /* KIAMotorShowTests.m */; };
+		9B480E1C15053EDE0062743F /* cerato.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E1415053EDE0062743F /* cerato.png */; };
+		9B480E1D15053EDE0062743F /* cerato koup.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E1515053EDE0062743F /* cerato koup.png */; };
+		9B480E1E15053EDE0062743F /* mohave.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E1615053EDE0062743F /* mohave.png */; };
+		9B480E1F15053EDE0062743F /* picanto.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E1715053EDE0062743F /* picanto.png */; };
+		9B480E2015053EDE0062743F /* rio.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E1815053EDE0062743F /* rio.png */; };
+		9B480E2115053EDE0062743F /* sorento.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E1915053EDE0062743F /* sorento.png */; };
+		9B480E2215053EDE0062743F /* soul.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E1A15053EDE0062743F /* soul.png */; };
+		9B480E2315053EDE0062743F /* sportage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E1B15053EDE0062743F /* sportage.png */; };
+		9B480E2C150546280062743F /* ceratoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E24150546280062743F /* ceratoLogo.png */; };
+		9B480E2D150546280062743F /* cerato koupLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E25150546280062743F /* cerato koupLogo.png */; };
+		9B480E2E150546280062743F /* mohaveLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E26150546280062743F /* mohaveLogo.png */; };
+		9B480E2F150546280062743F /* picantoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E27150546280062743F /* picantoLogo.png */; };
+		9B480E30150546280062743F /* rioLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E28150546280062743F /* rioLogo.png */; };
+		9B480E31150546280062743F /* sorentoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E29150546280062743F /* sorentoLogo.png */; };
+		9B480E32150546280062743F /* soulLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E2A150546280062743F /* soulLogo.png */; };
+		9B480E33150546280062743F /* sportageLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B480E2B150546280062743F /* sportageLogo.png */; };
+		9B480E3B150549090062743F /* SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480E3A150549090062743F /* SplashScreen.m */; };
+		9B480E3E150554310062743F /* ModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480E3D150554310062743F /* ModelTableViewController.m */; };
+		9B480E41150555410062743F /* ModelDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B480E40150555410062743F /* ModelDetailTableViewController.m */; };
+		9B5908181508EAF000CF0928 /* PlansTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5908171508EAF000CF0928 /* PlansTableViewController.m */; };
+		9B59081F1509236800CF0928 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B59081E1509236800CF0928 /* MessageUI.framework */; };
+		9B5908211509339400CF0928 /* mails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B5908201509339400CF0928 /* mails.plist */; };
+		9B59082A15095BD600CF0928 /* grayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B59082915095BD600CF0928 /* grayButton.png */; };
+		9B5CC268150638BF007DAA02 /* modelsDetails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B5CC267150638BF007DAA02 /* modelsDetails.plist */; };
+		9B5CC2781506ACEA007DAA02 /* PlanTipo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CC2771506ACEA007DAA02 /* PlanTipo1ViewController.m */; };
+		9BA93514150A34DD0079EDDB /* PlanTipo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93513150A34DD0079EDDB /* PlanTipo2ViewController.m */; };
+		9BA93521150A497D0079EDDB /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA93520150A497D0079EDDB /* icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +63,52 @@
 		9B480DDF15053AE40062743F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B480DE115053AE40062743F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B480DE315053AE40062743F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9B480DE715053AE40062743F /* KIAMotorShow-Info.plist */ = {isa = PBXFileReference; path = "KIAMotorShow-Info.plist"; sourceTree = "<group>"; };
+		9B480DE715053AE40062743F /* KIAMotorShow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KIAMotorShow-Info.plist"; sourceTree = "<group>"; };
 		9B480DE915053AE40062743F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B480DEB15053AE40062743F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9B480DED15053AE40062743F /* KIAMotorShow-Prefix.pch */ = {isa = PBXFileReference; path = "KIAMotorShow-Prefix.pch"; sourceTree = "<group>"; };
-		9B480DEE15053AE40062743F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B480DED15053AE40062743F /* KIAMotorShow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIAMotorShow-Prefix.pch"; sourceTree = "<group>"; };
+		9B480DEE15053AE40062743F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B480DEF15053AE40062743F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9B480DF215053AE40062743F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9B480DF415053AE40062743F /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		9B480DF515053AE40062743F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9B480DFC15053AE40062743F /* KIAMotorShowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIAMotorShowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B480DFD15053AE40062743F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9B480E0515053AE40062743F /* KIAMotorShowTests-Info.plist */ = {isa = PBXFileReference; path = "KIAMotorShowTests-Info.plist"; sourceTree = "<group>"; };
+		9B480E0515053AE40062743F /* KIAMotorShowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KIAMotorShowTests-Info.plist"; sourceTree = "<group>"; };
 		9B480E0715053AE40062743F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9B480E0915053AE50062743F /* KIAMotorShowTests.h */ = {isa = PBXFileReference; path = KIAMotorShowTests.h; sourceTree = "<group>"; };
+		9B480E0915053AE50062743F /* KIAMotorShowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIAMotorShowTests.h; sourceTree = "<group>"; };
 		9B480E0A15053AE50062743F /* KIAMotorShowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAMotorShowTests.m; sourceTree = "<group>"; };
+		9B480E1415053EDE0062743F /* cerato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cerato.png; sourceTree = "<group>"; };
+		9B480E1515053EDE0062743F /* cerato koup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerato koup.png"; sourceTree = "<group>"; };
+		9B480E1615053EDE0062743F /* mohave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mohave.png; sourceTree = "<group>"; };
+		9B480E1715053EDE0062743F /* picanto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picanto.png; sourceTree = "<group>"; };
+		9B480E1815053EDE0062743F /* rio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rio.png; sourceTree = "<group>"; };
+		9B480E1915053EDE0062743F /* sorento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sorento.png; sourceTree = "<group>"; };
+		9B480E1A15053EDE0062743F /* soul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soul.png; sourceTree = "<group>"; };
+		9B480E1B15053EDE0062743F /* sportage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sportage.png; sourceTree = "<group>"; };
+		9B480E24150546280062743F /* ceratoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ceratoLogo.png; sourceTree = "<group>"; };
+		9B480E25150546280062743F /* cerato koupLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerato koupLogo.png"; sourceTree = "<group>"; };
+		9B480E26150546280062743F /* mohaveLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mohaveLogo.png; sourceTree = "<group>"; };
+		9B480E27150546280062743F /* picantoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picantoLogo.png; sourceTree = "<group>"; };
+		9B480E28150546280062743F /* rioLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rioLogo.png; sourceTree = "<group>"; };
+		9B480E29150546280062743F /* sorentoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sorentoLogo.png; sourceTree = "<group>"; };
+		9B480E2A150546280062743F /* soulLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soulLogo.png; sourceTree = "<group>"; };
+		9B480E2B150546280062743F /* sportageLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sportageLogo.png; sourceTree = "<group>"; };
+		9B480E39150549090062743F /* SplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreen.h; sourceTree = "<group>"; };
+		9B480E3A150549090062743F /* SplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreen.m; sourceTree = "<group>"; };
+		9B480E3C150554310062743F /* ModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelTableViewController.h; sourceTree = "<group>"; };
+		9B480E3D150554310062743F /* ModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTableViewController.m; sourceTree = "<group>"; };
+		9B480E3F150555410062743F /* ModelDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelDetailTableViewController.h; sourceTree = "<group>"; };
+		9B480E40150555410062743F /* ModelDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelDetailTableViewController.m; sourceTree = "<group>"; };
+		9B5908161508EAF000CF0928 /* PlansTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlansTableViewController.h; sourceTree = "<group>"; };
+		9B5908171508EAF000CF0928 /* PlansTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlansTableViewController.m; sourceTree = "<group>"; };
+		9B59081E1509236800CF0928 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9B5908201509339400CF0928 /* mails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mails.plist; sourceTree = "<group>"; };
+		9B59082915095BD600CF0928 /* grayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayButton.png; sourceTree = "<group>"; };
+		9B5CC267150638BF007DAA02 /* modelsDetails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = modelsDetails.plist; sourceTree = "<group>"; };
+		9B5CC2761506ACEA007DAA02 /* PlanTipo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanTipo1ViewController.h; sourceTree = "<group>"; };
+		9B5CC2771506ACEA007DAA02 /* PlanTipo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanTipo1ViewController.m; sourceTree = "<group>"; };
+		9BA93512150A34DD0079EDDB /* PlanTipo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanTipo2ViewController.h; sourceTree = "<group>"; };
+		9BA93513150A34DD0079EDDB /* PlanTipo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanTipo2ViewController.m; sourceTree = "<group>"; };
+		9BA93520150A497D0079EDDB /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B59081F1509236800CF0928 /* MessageUI.framework in Frameworks */,
 				9B480DE015053AE40062743F /* UIKit.framework in Frameworks */,
 				9B480DE215053AE40062743F /* Foundation.framework in Frameworks */,
 				9B480DE415053AE40062743F /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +158,7 @@
 		9B480DDE15053AE40062743F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B59081E1509236800CF0928 /* MessageUI.framework */,
 				9B480DDF15053AE40062743F /* UIKit.framework */,
 				9B480DE115053AE40062743F /* Foundation.framework */,
 				9B480DE315053AE40062743F /* CoreGraphics.framework */,
@@ -111,11 +170,22 @@
 		9B480DE515053AE40062743F /* KIAMotorShow */ = {
 			isa = PBXGroup;
 			children = (
+				9B480E38150548BA0062743F /* Resources */,
 				9B480DEE15053AE40062743F /* AppDelegate.h */,
 				9B480DEF15053AE40062743F /* AppDelegate.m */,
 				9B480DF115053AE40062743F /* MainStoryboard.storyboard */,
-				9B480DF415053AE40062743F /* ViewController.h */,
-				9B480DF515053AE40062743F /* ViewController.m */,
+				9B480E39150549090062743F /* SplashScreen.h */,
+				9B480E3A150549090062743F /* SplashScreen.m */,
+				9B480E3C150554310062743F /* ModelTableViewController.h */,
+				9B480E3D150554310062743F /* ModelTableViewController.m */,
+				9B480E3F150555410062743F /* ModelDetailTableViewController.h */,
+				9B480E40150555410062743F /* ModelDetailTableViewController.m */,
+				9B5CC2761506ACEA007DAA02 /* PlanTipo1ViewController.h */,
+				9B5CC2771506ACEA007DAA02 /* PlanTipo1ViewController.m */,
+				9B5908161508EAF000CF0928 /* PlansTableViewController.h */,
+				9B5908171508EAF000CF0928 /* PlansTableViewController.m */,
+				9BA93512150A34DD0079EDDB /* PlanTipo2ViewController.h */,
+				9BA93513150A34DD0079EDDB /* PlanTipo2ViewController.m */,
 				9B480DE615053AE40062743F /* Supporting Files */,
 			);
 			path = KIAMotorShow;
@@ -149,6 +219,33 @@
 				9B480E0615053AE40062743F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B480E38150548BA0062743F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9BA93520150A497D0079EDDB /* icon-72.png */,
+				9B59082915095BD600CF0928 /* grayButton.png */,
+				9B480E1415053EDE0062743F /* cerato.png */,
+				9B480E24150546280062743F /* ceratoLogo.png */,
+				9B480E25150546280062743F /* cerato koupLogo.png */,
+				9B480E26150546280062743F /* mohaveLogo.png */,
+				9B480E27150546280062743F /* picantoLogo.png */,
+				9B480E28150546280062743F /* rioLogo.png */,
+				9B480E29150546280062743F /* sorentoLogo.png */,
+				9B480E2A150546280062743F /* soulLogo.png */,
+				9B480E2B150546280062743F /* sportageLogo.png */,
+				9B480E1515053EDE0062743F /* cerato koup.png */,
+				9B480E1615053EDE0062743F /* mohave.png */,
+				9B480E1715053EDE0062743F /* picanto.png */,
+				9B480E1815053EDE0062743F /* rio.png */,
+				9B480E1915053EDE0062743F /* sorento.png */,
+				9B480E1A15053EDE0062743F /* soul.png */,
+				9B480E1B15053EDE0062743F /* sportage.png */,
+				9B5CC267150638BF007DAA02 /* modelsDetails.plist */,
+				9B5908201509339400CF0928 /* mails.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +320,26 @@
 			files = (
 				9B480DEA15053AE40062743F /* InfoPlist.strings in Resources */,
 				9B480DF315053AE40062743F /* MainStoryboard.storyboard in Resources */,
+				9B480E1C15053EDE0062743F /* cerato.png in Resources */,
+				9B480E1D15053EDE0062743F /* cerato koup.png in Resources */,
+				9B480E1E15053EDE0062743F /* mohave.png in Resources */,
+				9B480E1F15053EDE0062743F /* picanto.png in Resources */,
+				9B480E2015053EDE0062743F /* rio.png in Resources */,
+				9B480E2115053EDE0062743F /* sorento.png in Resources */,
+				9B480E2215053EDE0062743F /* soul.png in Resources */,
+				9B480E2315053EDE0062743F /* sportage.png in Resources */,
+				9B480E2C150546280062743F /* ceratoLogo.png in Resources */,
+				9B480E2D150546280062743F /* cerato koupLogo.png in Resources */,
+				9B480E2E150546280062743F /* mohaveLogo.png in Resources */,
+				9B480E2F150546280062743F /* picantoLogo.png in Resources */,
+				9B480E30150546280062743F /* rioLogo.png in Resources */,
+				9B480E31150546280062743F /* sorentoLogo.png in Resources */,
+				9B480E32150546280062743F /* soulLogo.png in Resources */,
+				9B480E33150546280062743F /* sportageLogo.png in Resources */,
+				9B5CC268150638BF007DAA02 /* modelsDetails.plist in Resources */,
+				9B5908211509339400CF0928 /* mails.plist in Resources */,
+				9B59082A15095BD600CF0928 /* grayButton.png in Resources */,
+				9BA93521150A497D0079EDDB /* icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +376,12 @@
 			files = (
 				9B480DEC15053AE40062743F /* main.m in Sources */,
 				9B480DF015053AE40062743F /* AppDelegate.m in Sources */,
-				9B480DF615053AE40062743F /* ViewController.m in Sources */,
+				9B480E3B150549090062743F /* SplashScreen.m in Sources */,
+				9B480E3E150554310062743F /* ModelTableViewController.m in Sources */,
+				9B480E41150555410062743F /* ModelDetailTableViewController.m in Sources */,
+				9B5CC2781506ACEA007DAA02 /* PlanTipo1ViewController.m in Sources */,
+				9B5908181508EAF000CF0928 /* PlansTableViewController.m in Sources */,
+				9BA93514150A34DD0079EDDB /* PlanTipo2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +553,7 @@
 				9B480E1015053AE50062743F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B480E1115053AE50062743F /* Build configuration list for PBXNativeTarget "KIAMotorShowTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +562,7 @@
 				9B480E1315053AE50062743F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SplashScreen.h
 //  KIAMotorShow
 //
 //  Created by fernando colman on 3/5/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SplashScreen : UIViewController
 
 @end
