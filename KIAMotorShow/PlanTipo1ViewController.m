@@ -36,6 +36,22 @@ NSArray* plazos;
 -(IBAction)hideTheKeyboard:(id)sender
 {   
     [self.view endEditing:TRUE];
+    
+    if ([tipoPlan isEqualToString:@"PrimerCuota3Meses"] || [tipoPlan isEqualToString:@"TasaLoca"]) {
+        
+        if ([entrega.text intValue] < 20 || [entrega.text intValue] > 90) {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"El valor de la entrega debe de estar entre 20% y 90%"
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            
+            entrega.text = @"";
+
+        }
+    }
 }
 
 -(IBAction)calcular:(id)sender{
