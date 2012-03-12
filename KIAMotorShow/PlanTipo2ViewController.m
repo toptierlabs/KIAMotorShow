@@ -10,10 +10,11 @@
 
 @implementation PlanTipo2ViewController
 
-@synthesize modeloLabel,precioLabel,entrega,tasaLabel,plazo,porcFinanciarLabel,montoFinanciarLabel,plazoRefiLabel,comiRefiLabel;
+@synthesize modeloLabel,precioLabel,entregaLabel,tasaLabel,plazo,porcFinanciarLabel,montoFinanciarLabel,plazoRefi,comiRefiLabel;
 @synthesize porcBancoLabel,cuotaMensLabel,cuotaAnualLabel,tipoPlan,modelo,precio,email;
 
 NSString* subject;
+NSArray* plazos;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,24 +41,28 @@ NSString* subject;
 }
 
 -(IBAction)calcular:(id)sender{
-//    int cantCuotas;
-//    double tmu,tmi;
-//    if ([tipoPlan isEqualToString:@"PrimerCuota3Meses"]) {
-//        cantCuotas = 60;
-//        tmu = 0.00634561366202258;
-//        tmi = 0.00774164866766754;
-//    }
-//    else{
-//        cantCuotas = 48;
-//        tmu = 0.00393957509926013;
-//        
-//        tmi = 0.00480628162109736;
-//    }
+    int cantCuotas;
+    double tmu,tmi;
     
-    int porcFinanciar = 100 - [entrega.text intValue];
+    if ([plazoRefi.text isEqualToString:@"12 meses"]) {
+        cantCuotas = 12;
+    } else if ([plazoRefi.text isEqualToString:@"18 meses"]) {
+        cantCuotas = 18;       
+    }
+    else{
+        cantCuotas = 24;
+    }
+    
+    
+    tmu = 0.00472276658416138;
+        
+    tmi = 0.00576177523267688;
+
+    
+    int porcFinanciar = 50;
     [porcFinanciarLabel setText:[NSString stringWithFormat:@"%d%%", porcFinanciar]];
     
-    double porc = ([entrega.text doubleValue]/100);    
+    double porc = 0.5;    
     
     double montoAdelanto = precio * porc;
     
@@ -65,16 +70,17 @@ NSString* subject;
     
     [montoFinanciarLabel setText:[NSString stringWithFormat:@"%d", montoFinanciar]];
 
-//    double capital = [montoFinanciarLabel.text doubleValue];
-//    double ints = capital * tmu;
-//    double ivaints = ints * 0.22;
-//    double cuota = capital / ((1 - pow((1 / (1 + tmi)), cantCuotas)) / tmi);
-//    double amortCap = cuota - ints - ivaints;
-//    double sv = capital * 0.00060;
-//    double tcps = (capital + ints) * 0.000332;
-//    int cuotaTotal = round(cuota + tcps + sv);
+    double capital = [montoFinanciarLabel.text doubleValue];
+    double ints = capital * tmu;
+    double ivaints = ints * 0.22;
+    double cuota = capital / ((1 - pow((1 / (1 + tmi)), cantCuotas)) / tmi);
+    double amortCap = cuota - ints - ivaints;
+    double sv = capital * 0.00060;
+    double tcps = (capital + ints) * 0.000332;
+    int cuotaTotal = round(cuota + tcps + sv);
     
     [cuotaAnualLabel setText:[NSString stringWithFormat:@"%d", montoFinanciar]];
+    [cuotaMensLabel  setText:[NSString stringWithFormat:@"%d", cuotaTotal]];
     
     
 }
@@ -133,14 +139,14 @@ NSString* subject;
     
     body = [NSString stringWithFormat:@"%@\n- Producto    %@", body, modelo];
     body = [NSString stringWithFormat:@"%@\n- PVP(Precio de venta al público)    U$S%d", body, precio];
-    body = [NSString stringWithFormat:@"%@\n- Entrega    50%"];
+    body = [NSString stringWithFormat:@"%@\n- Entrega    50%",body];
     body = [NSString stringWithFormat:@"%@\n- Plazo    %@", body, plazo.text];
     body = [NSString stringWithFormat:@"%@\n- A Financiar(porcentaje a financiar y monto a financiar)    %@", body,  [NSString stringWithFormat:@"%@-U$S%@", porcFinanciarLabel.text, montoFinanciarLabel.text]];
     body = [NSString stringWithFormat:@"%@\n-  Valor de primera cuota    U$S%@", body, cuotaMensLabel.text];
     
-    if ([tipoPlan isEqualToString:@"PrimerCuota3Meses"] || [tipoPlan isEqualToString:@"TasaLoca"]) {
-        body = [NSString stringWithFormat:@"%@\n\n\n  *Se incluyen gastos de seguro de vida para personas físicas", body];
-    }
+    
+    body = [NSString stringWithFormat:@"%@\n\n\n  *Se incluyen gastos de seguro de vida para personas físicas", body];
+  
     
 
     
@@ -196,7 +202,7 @@ NSString* subject;
     
     body = [NSString stringWithFormat:@"%@\n- Producto    %@", body, modelo];
     body = [NSString stringWithFormat:@"%@\n- PVP(Precio de venta al público)    U$S%d", body, precio];
-    body = [NSString stringWithFormat:@"%@\n- Entrega    50%"];
+    body = [NSString stringWithFormat:@"%@\n- Entrega    50%",body];
     body = [NSString stringWithFormat:@"%@\n- Plazo    %@", body, plazo.text];
     body = [NSString stringWithFormat:@"%@\n- A Financiar(porcentaje a financiar y monto a financiar)    %@", body,  [NSString stringWithFormat:@"%@-U$S%@", porcFinanciarLabel.text, montoFinanciarLabel.text]];
     body = [NSString stringWithFormat:@"%@\n-  Valor de primera cuota    U$S%@", body, cuotaMensLabel.text];
@@ -223,6 +229,10 @@ NSString* subject;
 {
     [super viewDidLoad];
     
+    plazos = [[NSArray alloc] initWithObjects:@"12 meses", @"18 meses",@"24 meses",nil];
+    
+    plazoRefi.text = @"12 meses";
+    
     [modeloLabel setText:modelo];
     [precioLabel setText:[NSString stringWithFormat:@"%d", precio]];
 
@@ -231,6 +241,29 @@ NSString* subject;
     [plazo setText:@"12 meses"];
     [self.navigationItem setTitle:@"GANATE 1 AÑO"];
     subject = @"GANATE 1 AÑO – Flexiplan BBVA";
+    
+    // Create Picker view Toolbar. It contains a done button
+    UIToolbar* toolbar = [[UIToolbar alloc] init];
+    toolbar.barStyle = UIBarStyleBlackTranslucent;
+    [toolbar sizeToFit];
+    
+    //to make the done button aligned to the right
+    UIBarButtonItem *flexibleSpaceLeft = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem* doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done"
+                                                                   style:UIBarButtonItemStyleDone target:self
+                                                                  action:@selector(doneClicked:)];
+    
+    [toolbar setItems:[NSArray arrayWithObjects:flexibleSpaceLeft, doneButton, nil]];
+    
+    //Create pickerview objects and set delegate
+    UIPickerView * pickerViewFrom= [[UIPickerView alloc] init];
+    pickerViewFrom.showsSelectionIndicator = YES;
+    pickerViewFrom.dataSource = self;
+    pickerViewFrom.delegate = self;
+    pickerViewFrom.tag = 100;
+    
+    plazoRefi.inputView = pickerViewFrom;
+    plazoRefi.inputAccessoryView = toolbar;
 }
 
 
@@ -245,5 +278,44 @@ NSString* subject;
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark - Picker view events
+
+//PickerView
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    
+    return 1;
+
+}
+
+// Executed when a new element is selected in the picker view
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+        plazoRefi.text =  [plazos objectAtIndex:row];
+            
+ }
+
+// Get the number of elements in the picker view
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
+{
+    return [plazos count];
+
+}
+
+// Get the text to be shown for an element in the picker view.
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+{
+    
+    return [plazos objectAtIndex:row];
+          
+}
+
+// Done button clicked in the toolbar. Hides the picker view.
+-(void)doneClicked:(id) sender
+{
+    // Hide responders
+    [plazoRefi resignFirstResponder]; 
+}
+
 
 @end

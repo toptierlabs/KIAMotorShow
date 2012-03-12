@@ -61,7 +61,7 @@ NSInteger sort(id a, id b, void* p) {
         
     modelDetail = [detailsArray objectForKey:model];
 
-
+    [self.navigationItem setTitle:model.uppercaseString];
 
 }
 

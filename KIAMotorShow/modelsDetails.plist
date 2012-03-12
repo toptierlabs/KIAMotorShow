@@ -90,7 +90,7 @@ EQUIPO: *Aire Acondicionado *Climatizador *Dirección hidráulica *Vidrios eléc
 			<string>Todo terreno, 2WD, motor 2.0 L, 166 CV, gasolina, transmisión manual 5 vel., llantas de aluminio R16”.
 EQUIPO: *Aire acondicionado *Dirección hidráulica *Espejos y vidrios eléctricos *Bloqueo centralizado *Bloqueo y alarma remota *ABS *Doble airbag  *Frenos de disco en las 4 ruedas *Faros de niebla *Tercera luz de freno  *Radio CD MP3 *Conexión USB/iPod.</string>
 			<key>precio</key>
-			<string>39990</string>
+			<string>37990</string>
 		</dict>
 		<key>New item - 2</key>
 		<dict>
@@ -112,7 +112,7 @@ EQUIPO: *Aire acondicionado *Dirección hidráulica *Espejos y vidrios eléctric
 			<key>detalle</key>
 			<string>Coupé deportiva, 2 vol, 2 ptas., 5 pax., 4 cil., 2.0 c.c., 156 CV, DOHC, 16 V, CVVT, rod. 17”, caja aut. sec. de 6 vel., 4,48 mts. EQUIPO: *Aire acondicionado climatizado *Dirección hidráulica *Vidrios eléctricos *Vidrios tintados *Bloqueo y alarma remota *Espejos eléctricos *Llantas de aluminio R17” *ABS *Freno de disco en las 4 ruedas *Doble airbag *Velocidad crucero *Sensor de estacionamiento *Faros de niebla *Computadora a bordo *Techo corredizo *Pack de cuero y cromado * Radio CD/MP3/USB/iPod *Comando de audio en el volante.</string>
 			<key>precio</key>
-			<string>39990</string>
+			<string>36990</string>
 		</dict>
 	</dict>
 	<key>Sorento</key>
@@ -126,7 +126,7 @@ EQUIPO: *Aire acondicionado *Dirección hidráulica *Espejos y vidrios eléctric
 EQUIPO: *Climatizador dual *Dirección hidráulica *Vidrios y espejos retrovisores eléctricos *Bloqueo y alarma remota *Bloqueo central *Llantas de aluminio R17” *ABS *Doble airbag *Frenos de disco en las 4 ruedas  
 *Sensor de estacionamiento *Inmovilizador *Computadora a bordo *Vidrios tintados *Pack de cuero y cromado *Faros de niebla *CD/MP3 con conexión USB+iPod.</string>
 			<key>precio</key>
-			<string>52990</string>
+			<string>49990</string>
 		</dict>
 	</dict>
 	<key>Mohave</key>

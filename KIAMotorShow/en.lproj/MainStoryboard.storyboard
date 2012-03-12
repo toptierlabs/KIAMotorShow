@@ -35,24 +35,24 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" id="9zb-YS-ytU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="138" sectionHeaderHeight="22" sectionFooterHeight="22" id="9zb-YS-ytU">
                                 <rect key="frame" x="-9" y="0.0" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ModelCell" id="43c-wj-Lk2">
-                                        <rect key="frame" x="0.0" y="22" width="768" height="120"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ModelCell" rowHeight="138" id="43c-wj-Lk2">
+                                        <rect key="frame" x="0.0" y="22" width="768" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="137"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" id="1Wm-la-IMx">
-                                                    <rect key="frame" x="20" y="2" width="234" height="115"/>
+                                                    <rect key="frame" x="20" y="11" width="234" height="115"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" tag="101" contentMode="scaleAspectFit" id="7G2-i8-izv">
-                                                    <rect key="frame" x="345" y="28" width="326" height="89"/>
+                                                    <rect key="frame" x="352" y="48" width="326" height="89"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -283,10 +283,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="lR9-j3-Mm8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="lR9-j3-Mm8">
                                 <rect key="frame" x="476" y="151" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                 <connections>
                                     <action selector="hideTheKeyboard:" destination="UOV-Dg-YCl" eventType="editingDidEndOnExit" id="6y3-63-zI5"/>
@@ -433,13 +433,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Plazo" lineBreakMode="tailTruncation" minimumFontSize="10" id="Aa3-dk-14x">
-                                <rect key="frame" x="476" y="229" width="147" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%" lineBreakMode="tailTruncation" minimumFontSize="10" id="JOj-1y-pac">
                                 <rect key="frame" x="518" y="154" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -463,6 +456,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="woT-Hz-7eo">
+                                <rect key="frame" x="476" y="224" width="78" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -474,7 +473,7 @@
                         <outlet property="modeloLabel" destination="Sl2-xf-ecT" id="Zcw-xI-n5V"/>
                         <outlet property="montoEntregaLabel" destination="Shl-LU-0gN" id="Jyi-qa-QPT"/>
                         <outlet property="montoFinanciarLabel" destination="7Gb-Cb-KQg" id="qVb-K5-goH"/>
-                        <outlet property="plazo" destination="Aa3-dk-14x" id="o9X-uw-zOy"/>
+                        <outlet property="plazo" destination="woT-Hz-7eo" id="Iha-k8-G02"/>
                         <outlet property="porcBancoLabel" destination="JjW-EA-n1n" id="h84-wR-rpp"/>
                         <outlet property="porcFinanciarLabel" destination="8HB-JA-hop" id="VCW-CH-3kc"/>
                         <outlet property="precioLabel" destination="6A0-1Q-WT2" id="tLz-M9-6S8"/>
@@ -723,13 +722,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="24 meses" lineBreakMode="tailTruncation" minimumFontSize="10" id="N9M-is-A5R">
-                                <rect key="frame" x="476" y="483" width="90" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5.90%" lineBreakMode="tailTruncation" minimumFontSize="10" id="zZe-K1-Fc6">
                                 <rect key="frame" x="476" y="512" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -751,22 +743,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="YQD-wS-y0X">
-                                <rect key="frame" x="476" y="151" width="40" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="hideTheKeyboard:" destination="pqY-Gc-0Ht" eventType="editingDidEndOnExit" id="B58-eR-D6H"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%" lineBreakMode="tailTruncation" minimumFontSize="10" id="CKf-Hd-HcB">
-                                <rect key="frame" x="517" y="156" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="50%" lineBreakMode="tailTruncation" minimumFontSize="10" id="CKf-Hd-HcB">
+                                <rect key="frame" x="476" y="151" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="uOT-CS-S73">
+                                <rect key="frame" x="474" y="478" width="90" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -775,10 +764,10 @@
                         <outlet property="cuotaAnualLabel" destination="ajt-BY-MVb" id="Xyp-AK-tdR"/>
                         <outlet property="cuotaMensLabel" destination="we4-ez-2ba" id="NlP-mq-WM8"/>
                         <outlet property="email" destination="AF9-zm-dj1" id="hAs-xf-kgb"/>
-                        <outlet property="entrega" destination="YQD-wS-y0X" id="2tK-mv-uqJ"/>
                         <outlet property="modeloLabel" destination="hLV-4j-J7v" id="nnR-sV-LOt"/>
                         <outlet property="montoFinanciarLabel" destination="Ikt-T3-V36" id="P72-ix-jZt"/>
                         <outlet property="plazo" destination="u9e-CH-7eC" id="fYK-pH-eDA"/>
+                        <outlet property="plazoRefi" destination="uOT-CS-S73" id="5Dl-or-5NA"/>
                         <outlet property="porcBancoLabel" destination="Ebc-sA-qWQ" id="Ln0-Ib-tgS"/>
                         <outlet property="porcFinanciarLabel" destination="Z6d-Lg-g32" id="pa7-2U-cf6"/>
                         <outlet property="precioLabel" destination="xfJ-iA-edw" id="8qZ-iI-eb2"/>
@@ -793,6 +782,61 @@
         <image name="grayButton.png" width="70" height="40"/>
         <image name="sportage.png" width="500" height="270"/>
     </resources>
+    <classes>
+        <class className="ModelDetailTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ModelDetailTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ModelTableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ModelTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="PlanTipo1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlanTipo1ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cuotaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="entrega" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="modeloLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="montoEntregaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="montoFinanciarLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="plazo" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="porcBancoLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="porcFinanciarLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="precioLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tasaLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PlanTipo2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlanTipo2ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="comiRefiLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cuotaAnualLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cuotaMensLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="entregaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="modeloLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="montoFinanciarLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="plazo" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="plazoRefi" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="porcBancoLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="porcFinanciarLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="precioLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tasaLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PlansTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlansTableViewController.h"/>
+        </class>
+        <class className="SplashScreen" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashScreen.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

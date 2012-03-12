@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@interface PlanTipo1ViewController : UIViewController{
+@interface PlanTipo1ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>{
     
     IBOutlet UILabel * modeloLabel;
     IBOutlet UILabel * precioLabel;
     IBOutlet UITextField * entrega;
     IBOutlet UILabel * tasaLabel;
-    IBOutlet UILabel * plazo;
+    IBOutlet UITextField * plazo;
     IBOutlet UILabel * porcFinanciarLabel;
     IBOutlet UILabel * montoFinanciarLabel;
     IBOutlet UILabel * montoEntregaLabel;
@@ -33,7 +33,7 @@
 @property (nonatomic,retain) UILabel* precioLabel;
 @property (nonatomic,retain) UITextField* entrega;
 @property (nonatomic,retain) UILabel* tasaLabel;
-@property (nonatomic,retain) UILabel* plazo;
+@property (nonatomic,retain) UITextField* plazo;
 @property (nonatomic,retain) UILabel* porcFinanciarLabel;
 @property (nonatomic,retain) UILabel* montoFinanciarLabel;
 @property (nonatomic,retain) UILabel* montoEntregaLabel;
