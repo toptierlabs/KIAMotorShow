@@ -261,7 +261,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TASA BONIFICADA" lineBreakMode="tailTruncation" minimumFontSize="10" id="xqF-Hz-Jo3">
-                                <rect key="frame" x="146" y="39" width="204" height="21"/>
+                                <rect key="frame" x="146" y="39" width="211" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="0.69411764710000001" green="0.062745098040000002" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -524,133 +524,133 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TASA BONIFICADA" lineBreakMode="tailTruncation" minimumFontSize="10" id="CaZ-zm-vHF">
-                                <rect key="frame" x="146" y="39" width="187" height="21"/>
+                                <rect key="frame" x="146" y="28" width="187" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="0.69411764710000001" green="0.062745098040000002" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PRODUCTO" lineBreakMode="tailTruncation" minimumFontSize="10" id="a1w-FV-hmf">
-                                <rect key="frame" x="146" y="76" width="99" height="21"/>
+                                <rect key="frame" x="146" y="62" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Modelo" lineBreakMode="tailTruncation" minimumFontSize="10" id="hLV-4j-J7v">
-                                <rect key="frame" x="476" y="76" width="212" height="21"/>
+                                <rect key="frame" x="476" y="62" width="212" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PVP" lineBreakMode="tailTruncation" minimumFontSize="10" id="W0x-qB-mnT">
-                                <rect key="frame" x="146" y="105" width="99" height="21"/>
+                                <rect key="frame" x="146" y="91" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ENTREGA" lineBreakMode="tailTruncation" minimumFontSize="10" id="sUm-3G-qcn">
-                                <rect key="frame" x="146" y="134" width="99" height="21"/>
+                                <rect key="frame" x="146" y="120" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TASA" lineBreakMode="tailTruncation" minimumFontSize="10" id="mNc-1j-H36">
-                                <rect key="frame" x="146" y="163" width="99" height="21"/>
+                                <rect key="frame" x="146" y="149" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tasa" lineBreakMode="tailTruncation" minimumFontSize="10" id="gsG-qJ-YQY">
-                                <rect key="frame" x="476" y="163" width="142" height="21"/>
+                                <rect key="frame" x="476" y="149" width="142" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PLAZO" lineBreakMode="tailTruncation" minimumFontSize="10" id="HIB-R7-odf">
-                                <rect key="frame" x="146" y="192" width="99" height="21"/>
+                                <rect key="frame" x="146" y="178" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A FINANCIAR " lineBreakMode="tailTruncation" minimumFontSize="10" id="l03-b0-XLq">
-                                <rect key="frame" x="146" y="240" width="163" height="21"/>
+                                <rect key="frame" x="146" y="219" width="163" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A FINANCIAR (monto)" lineBreakMode="tailTruncation" minimumFontSize="10" id="EbM-Bn-P6d">
-                                <rect key="frame" x="146" y="269" width="179" height="21"/>
+                                <rect key="frame" x="146" y="248" width="179" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MONTO " lineBreakMode="tailTruncation" minimumFontSize="10" id="Z6d-Lg-g32">
-                                <rect key="frame" x="474" y="240" width="147" height="21"/>
+                                <rect key="frame" x="474" y="219" width="147" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" minimumFontSize="10" id="Ikt-T3-V36">
-                                <rect key="frame" x="476" y="269" width="147" height="21"/>
+                                <rect key="frame" x="476" y="248" width="147" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="CONDICIONES DE NEGOCIO" lineBreakMode="tailTruncation" minimumFontSize="10" id="c5p-H8-W2s">
-                                <rect key="frame" x="146" y="329" width="273" height="29"/>
+                                <rect key="frame" x="146" y="291" width="273" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="0.69411764710000001" green="0.062745098040000002" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="COMISION BANCARIA" lineBreakMode="tailTruncation" minimumFontSize="10" id="UuM-bX-M2U">
-                                <rect key="frame" x="146" y="369" width="177" height="21"/>
+                                <rect key="frame" x="146" y="328" width="177" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0%" lineBreakMode="tailTruncation" minimumFontSize="10" id="Ebc-sA-qWQ">
-                                <rect key="frame" x="476" y="369" width="141" height="21"/>
+                                <rect key="frame" x="476" y="328" width="141" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="CUOTA ANUAL" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="LJc-m5-XCJ">
-                                <rect key="frame" x="146" y="398" width="177" height="21"/>
+                                <rect key="frame" x="146" y="357" width="177" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="USD" lineBreakMode="tailTruncation" minimumFontSize="10" id="30j-Bi-ee8">
-                                <rect key="frame" x="426" y="398" width="42" height="21"/>
+                                <rect key="frame" x="426" y="357" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" minimumFontSize="10" id="ajt-BY-MVb">
-                                <rect key="frame" x="476" y="398" width="141" height="21"/>
+                                <rect key="frame" x="476" y="357" width="141" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tmx-aD-8uc">
-                                <rect key="frame" x="338" y="606" width="115" height="56"/>
+                                <rect key="frame" x="338" y="559" width="115" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="Calcular" backgroundImage="grayButton.png">
@@ -666,28 +666,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Precio" lineBreakMode="tailTruncation" minimumFontSize="10" id="xfJ-iA-edw">
-                                <rect key="frame" x="476" y="105" width="147" height="21"/>
+                                <rect key="frame" x="476" y="91" width="147" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="USD" lineBreakMode="tailTruncation" minimumFontSize="10" id="rE8-Ar-P8m">
-                                <rect key="frame" x="426" y="105" width="42" height="21"/>
+                                <rect key="frame" x="426" y="91" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Plazo" lineBreakMode="tailTruncation" minimumFontSize="10" id="u9e-CH-7eC">
-                                <rect key="frame" x="476" y="192" width="147" height="21"/>
+                                <rect key="frame" x="476" y="178" width="147" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="AF9-zm-dj1">
-                                <rect key="frame" x="275" y="697" width="342" height="31"/>
+                                <rect key="frame" x="275" y="655" width="342" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="send"/>
@@ -697,77 +697,77 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Direccion de Email" lineBreakMode="tailTruncation" minimumFontSize="10" id="imJ-md-HOC">
-                                <rect key="frame" x="98" y="702" width="169" height="21"/>
+                                <rect key="frame" x="98" y="660" width="169" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="REFINANCIAMIENTO" lineBreakMode="tailTruncation" minimumFontSize="10" id="Asg-BM-tPl">
-                                <rect key="frame" x="146" y="453" width="242" height="21"/>
+                                <rect key="frame" x="146" y="407" width="242" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="0.69411764710000001" green="0.062745098040000002" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Plazo" lineBreakMode="tailTruncation" minimumFontSize="10" id="UVS-dx-RBt">
-                                <rect key="frame" x="146" y="482" width="94" height="21"/>
+                                <rect key="frame" x="146" y="436" width="94" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tasa" lineBreakMode="tailTruncation" minimumFontSize="10" id="Bb4-31-fNU">
-                                <rect key="frame" x="146" y="512" width="113" height="21"/>
+                                <rect key="frame" x="146" y="469" width="113" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Comision" lineBreakMode="tailTruncation" minimumFontSize="10" id="zZE-W6-NkC">
-                                <rect key="frame" x="146" y="541" width="94" height="21"/>
+                                <rect key="frame" x="146" y="498" width="94" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="CUOTA MENSUAL" lineBreakMode="tailTruncation" minimumFontSize="10" id="dhP-fp-dwb">
-                                <rect key="frame" x="146" y="570" width="163" height="21"/>
+                                <rect key="frame" x="146" y="527" width="163" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5.90%" lineBreakMode="tailTruncation" minimumFontSize="10" id="zZe-K1-Fc6">
-                                <rect key="frame" x="476" y="512" width="77" height="21"/>
+                                <rect key="frame" x="476" y="469" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0%" lineBreakMode="tailTruncation" minimumFontSize="10" id="OyW-CS-j4Y">
-                                <rect key="frame" x="476" y="541" width="42" height="21"/>
+                                <rect key="frame" x="476" y="498" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MONTO CUOTA" lineBreakMode="tailTruncation" minimumFontSize="10" id="we4-ez-2ba">
-                                <rect key="frame" x="476" y="570" width="125" height="21"/>
+                                <rect key="frame" x="476" y="527" width="125" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="50%" lineBreakMode="tailTruncation" minimumFontSize="10" id="CKf-Hd-HcB">
-                                <rect key="frame" x="476" y="134" width="97" height="21"/>
+                                <rect key="frame" x="476" y="120" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="uOT-CS-S73">
-                                <rect key="frame" x="474" y="477" width="90" height="31"/>
+                                <rect key="frame" x="474" y="431" width="90" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
