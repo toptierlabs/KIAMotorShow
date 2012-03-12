@@ -49,7 +49,8 @@ NSInteger sort(id a, id b, void* p) {
 {
     [super viewDidLoad];
 
-       
+    
+
     NSString *path = [[NSBundle mainBundle] pathForResource:@"modelsDetails" ofType:@"plist"];
 	self.detailsArray = [NSMutableDictionary dictionaryWithContentsOfFile:path];
     

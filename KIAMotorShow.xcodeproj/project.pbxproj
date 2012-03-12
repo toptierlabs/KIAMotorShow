@@ -46,6 +46,7 @@
 		9B5CC2781506ACEA007DAA02 /* PlanTipo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CC2771506ACEA007DAA02 /* PlanTipo1ViewController.m */; };
 		9BA93514150A34DD0079EDDB /* PlanTipo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93513150A34DD0079EDDB /* PlanTipo2ViewController.m */; };
 		9BA93521150A497D0079EDDB /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA93520150A497D0079EDDB /* icon-72.png */; };
+		AB89FCC0150E8FFB000E5AF0 /* Kia.png in Resources */ = {isa = PBXBuildFile; fileRef = AB89FCBF150E8FFB000E5AF0 /* Kia.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		9BA93512150A34DD0079EDDB /* PlanTipo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanTipo2ViewController.h; sourceTree = "<group>"; };
 		9BA93513150A34DD0079EDDB /* PlanTipo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanTipo2ViewController.m; sourceTree = "<group>"; };
 		9BA93520150A497D0079EDDB /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		AB89FCBF150E8FFB000E5AF0 /* Kia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kia.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 				9B480E25150546280062743F /* cerato koupLogo.png */,
 				9B480E26150546280062743F /* mohaveLogo.png */,
 				9B480E27150546280062743F /* picantoLogo.png */,
+				AB89FCBF150E8FFB000E5AF0 /* Kia.png */,
 				9B480E28150546280062743F /* rioLogo.png */,
 				9B480E29150546280062743F /* sorentoLogo.png */,
 				9B480E2A150546280062743F /* soulLogo.png */,
@@ -340,6 +343,7 @@
 				9B5908211509339400CF0928 /* mails.plist in Resources */,
 				9B59082A15095BD600CF0928 /* grayButton.png in Resources */,
 				9BA93521150A497D0079EDDB /* icon-72.png in Resources */,
+				AB89FCC0150E8FFB000E5AF0 /* Kia.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
