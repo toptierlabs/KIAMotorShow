@@ -48,7 +48,6 @@ NSInteger sort(id a, id b, void* p) {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     
 
     NSString *path = [[NSBundle mainBundle] pathForResource:@"modelsDetails" ofType:@"plist"];
@@ -118,7 +117,7 @@ NSInteger sort(id a, id b, void* p) {
     
     
     UILabel* titleLabel = (UILabel *)[cell viewWithTag:101];
-    titleLabel.text = [NSString stringWithFormat:@"%@    U$S%d",[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"tipo"],[[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"precio"] integerValue]];
+    titleLabel.text = [NSString stringWithFormat:@"%@    U$S %d",[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"tipo"],[[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"precio"] integerValue]];
     
 
     [(UIImageView *)[cell viewWithTag:100] setImage:[UIImage imageNamed: [model lowercaseString]]]; 
