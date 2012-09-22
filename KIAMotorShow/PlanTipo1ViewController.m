@@ -11,7 +11,7 @@
 
 @implementation PlanTipo1ViewController
 
-@synthesize modeloLabel,precioLabel,entrega,tasaLabel,plazo,porcFinanciarLabel,montoFinanciarLabel,montoEntregaLabel,porcBancoLabel,cuotaLabel,tipoPlan,modelo,precio,email;
+@synthesize modeloLabel,precioLabel,entrega,tasaLabel,plazo,porcFinanciarLabel,montoFinanciarLabel,montoEntregaLabel,porcBancoLabel,cuotaLabel,tipoPlan,modelo,precio,email,primerCuota,textoGastos,entregaLabel,tituloLabel;
 
 NSString* subject;
 NSArray* plazos;
@@ -56,82 +56,131 @@ NSArray* plazos;
 
 -(IBAction)calcular:(id)sender{
     
-    int cantCuotas;
-    double tmu,tmi,cb;
     
-    if ([plazo.text isEqualToString:@"60 meses"]) {
-        cantCuotas = 60;
-    } else if ([plazo.text isEqualToString:@"48 meses"]) {
-        cantCuotas = 48;       
-    }
-    else if ([plazo.text isEqualToString:@"36 meses"]) {
-        cantCuotas = 36;       
-    }
-    else if ([plazo.text isEqualToString:@"24 meses"]) {
-        cantCuotas = 24;       
-    }
-    else if ([plazo.text isEqualToString:@"18 meses"]) {
-        cantCuotas = 18;       
-    }
-    else{
-        cantCuotas = 12;
-    }
-    
-    if ([tipoPlan isEqualToString:@"PrimerCuota3Meses"]) {
-         tmu = 0.00596186556442779;
-         tmi = 0.00727347598860191;
-         cb = 0.98;
-    }
-    else if([tipoPlan isEqualToString:@"TasaLoca"]){
-         tmu = 0.00393957509926013;
+    bool error = false;
+    if ([tipoPlan isEqualToString:@"PrimerCuota3Meses"] || [tipoPlan isEqualToString:@"TasaLoca"]) {
         
-        tmi = 0.00480628162109736;
-        
-        cb = 0.98;
+        if ([entrega.text intValue] < 20 || [entrega.text intValue] > 90) {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"El valor de la entrega debe de estar entre 20% y 90%"
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            
+            entrega.text = @"";
+            
+            error = true;
+        }
     }
-    else if([tipoPlan isEqualToString:@"50-50"]){
-        tmi = 0.0000000100273968950404;
+    
+    if(!error)
+    {
+            
+            int cantCuotas;
+            double tmu,tmi,cb;
+            
+            if ([plazo.text isEqualToString:@"60 meses"]) {
+                cantCuotas = 60;
+            } else if ([plazo.text isEqualToString:@"48 meses"]) {
+                cantCuotas = 48;       
+            }
+            else if ([plazo.text isEqualToString:@"36 meses"]) {
+                cantCuotas = 36;       
+            }
+            else if ([plazo.text isEqualToString:@"24 meses"]) {
+                cantCuotas = 24;       
+            }
+            else if ([plazo.text isEqualToString:@"18 meses"]) {
+                cantCuotas = 18;       
+            }
+            else{
+                cantCuotas = 12;
+            }
+            
+            if ([tipoPlan isEqualToString:@"PrimerCuota3Meses"]) {
+                tmu = 0.00596186556442779;
+                tmi = 0.00727347598860191;
+                cb = 0.98;
+            }
+            else if([tipoPlan isEqualToString:@"TasaLoca"]){
+                tmu = 0.00393957509926013;
+                
+                tmi = 0.00480628162109736;
+                
+                cb = 0.98;
+            }
+            else if([tipoPlan isEqualToString:@"50-50"]){
+                tmi = 0.0000000100273968950404;
+                
+                tmu = 0.00000000821917778282;
+                
+                cb = 0.995;
+                
+            }
+            
+            int porcFinanciar = 100 - [entrega.text intValue];
+            [porcFinanciarLabel setText:[NSString stringWithFormat:@"%d%%", porcFinanciar]];
+            
+            double porc = ([entrega.text doubleValue]/100);
+            
+            double montoAdelanto = precio * porc;
+            
+            int intMontoAdelanto =  round(montoAdelanto);
         
-        tmu = 0.00000000821917778282;
+            
         
-        cb = 0.995;
+            NSNumberFormatter *numberFormat = [[NSNumberFormatter alloc] init];
+            numberFormat.usesGroupingSeparator = YES;
+            numberFormat.groupingSeparator = @".";
+            numberFormat.groupingSize = 3;
+            NSString *stringNumber = [numberFormat stringFromNumber:[NSNumber numberWithInt:intMontoAdelanto]];
+            
+            
+            [montoEntregaLabel setText:[NSString stringWithFormat:@"%@",stringNumber]];
+            
+            
+            
+            int montoFinanciar = round((precio - montoAdelanto) / cb);
+        
+            numberFormat = [[NSNumberFormatter alloc] init];
+            numberFormat.usesGroupingSeparator = YES;
+            numberFormat.groupingSeparator = @".";
+            numberFormat.groupingSize = 3;
+            stringNumber = [numberFormat stringFromNumber:[NSNumber numberWithInt:montoFinanciar]];
+
+            
+            [montoFinanciarLabel setText:[NSString stringWithFormat:@"USD %@", stringNumber]];
+            
+            
+            
+            double capital = montoFinanciar;
+            double ints = 0;
+            double ivaints = 0;
+            if(![tipoPlan isEqualToString:@"50-50"]){
+                ints = capital * tmu;
+                ivaints = ints * 0.22;
+            }
+            
+            double cuota = capital / ((1 - pow((1 / (1 + tmi)), cantCuotas)) / tmi);
+            //double amortCap = cuota - ints - ivaints;
+            double sv = capital * 0.00060;
+            double tcps = (capital + ints) * 0.000332;
+            int cuotaTotal = round(cuota + tcps + sv);
+        
+            numberFormat = [[NSNumberFormatter alloc] init];
+            numberFormat.usesGroupingSeparator = YES;
+            numberFormat.groupingSeparator = @".";
+            numberFormat.groupingSize = 3;
+            stringNumber = [numberFormat stringFromNumber:[NSNumber numberWithInt:cuotaTotal]];
+            
+            [cuotaLabel setText:[NSString stringWithFormat:@"%@", stringNumber]];
+            
         
     }
-    
-    int porcFinanciar = 100 - [entrega.text intValue];
-    [porcFinanciarLabel setText:[NSString stringWithFormat:@"%d%%", porcFinanciar]];
-    
-    double porc = ([entrega.text doubleValue]/100);
-    
-    double montoAdelanto = precio * porc;
-    
-    int intMontoAdelanto =  round(montoAdelanto);
-    
-    [montoEntregaLabel setText:[NSString stringWithFormat:@"%d",intMontoAdelanto]];
-    
-    
-    
-    int montoFinanciar = round((precio - montoAdelanto) / cb);
-    
-    [montoFinanciarLabel setText:[NSString stringWithFormat:@"%d", montoFinanciar]];
-    
     
 
-    double capital = [montoFinanciarLabel.text doubleValue];
-    double ints = 0;
-    double ivaints = 0;
-    if(![tipoPlan isEqualToString:@"50-50"]){
-         ints = capital * tmu;
-         ivaints = ints * 0.22;
-    }
-
-    double cuota = capital / ((1 - pow((1 / (1 + tmi)), cantCuotas)) / tmi);
-    double amortCap = cuota - ints - ivaints;
-    double sv = capital * 0.00060;
-    double tcps = (capital + ints) * 0.000332;
-    int cuotaTotal = round(cuota + tcps + sv);
-    
-    [cuotaLabel setText:[NSString stringWithFormat:@"%d", cuotaTotal]];
     
     
 }
@@ -189,14 +238,25 @@ NSArray* plazos;
     NSString *body = @"";
     
     body = [NSString stringWithFormat:@"%@\n- Producto    %@", body, modelo];
-    body = [NSString stringWithFormat:@"%@\n- PVP(Precio de venta al público)    U$S%d", body, precio];
-    body = [NSString stringWithFormat:@"%@\n- Entrega    U$S%@", body, montoEntregaLabel.text];
+    body = [NSString stringWithFormat:@"%@\n- PVP(Precio de venta al público)    USD %d", body, precio];
+    body = [NSString stringWithFormat:@"%@\n- Entrega    USD %@", body, montoEntregaLabel.text];
     body = [NSString stringWithFormat:@"%@\n- Plazo    %@", body, plazo.text];
-    body = [NSString stringWithFormat:@"%@\n- A Financiar(porcentaje a financiar y monto a financiar)    %@", body,  [NSString stringWithFormat:@"%@-U$S%@", porcFinanciarLabel.text, montoFinanciarLabel.text]];
-    body = [NSString stringWithFormat:@"%@\n-  Valor de primera cuota    U$S%@", body, cuotaLabel.text];
+    body = [NSString stringWithFormat:@"%@\n- A Financiar(porcentaje a financiar y monto a financiar)    %@", body,  [NSString stringWithFormat:@"%@ - %@", porcFinanciarLabel.text, montoFinanciarLabel.text]];
+    
+    if ([tipoPlan isEqualToString:@"50-50"])
+    {
+        body = [NSString stringWithFormat:@"%@\n-  Cuota mensual    USD %@", body, cuotaLabel.text];
+    }   
+    else
+    {
+        body = [NSString stringWithFormat:@"%@\n-  Valor de primera cuota    USD %@", body, cuotaLabel.text];
+    }
+    
+    body = [NSString stringWithFormat:@"%@\n\n  La presente cotización es válida por 30 días", body];
     
     if ([tipoPlan isEqualToString:@"PrimerCuota3Meses"] || [tipoPlan isEqualToString:@"TasaLoca"]) {
-        body = [NSString stringWithFormat:@"%@\n\n\n  *Se incluyen gastos de seguro de vida para personas físicas", body];
+        body = [NSString stringWithFormat:@"%@\n\n\n  *Se incluyen gastos de seguro de vida para personas físicas \n", body];
+        body = [NSString stringWithFormat:@"%@  *Incluye gastos administrativos \n", body];
     }
     
     
@@ -215,19 +275,19 @@ NSArray* plazos;
     switch (result)
     {
         case MFMailComposeResultCancelled:
-            message = @"Canceled";
+            message = @"Cancelado";
             break;
         case MFMailComposeResultSaved:
-            message = @"Saved";
+            message = @"Salvado";
             break;
         case MFMailComposeResultSent:
-            message = @"Sent";
+            message = @"Enviado";
             break;
         case MFMailComposeResultFailed:
-            message = @"Failed";
+            message = @"Falló";
             break;
         default:
-            message = @"Not sent";
+            message = @"No enviado";
             break;
     }
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:message
@@ -253,15 +313,22 @@ NSArray* plazos;
     body = [NSString stringWithFormat:@"%@\n- Entrega    U$S%@", body, montoEntregaLabel.text];
     body = [NSString stringWithFormat:@"%@\n- Plazo    %@", body, plazo.text];
     body = [NSString stringWithFormat:@"%@\n- A Financiar(porcentaje a financiar y monto a financiar)    %@", body,  [NSString stringWithFormat:@"%@-U$S%@", porcFinanciarLabel.text, montoFinanciarLabel.text]];
-    body = [NSString stringWithFormat:@"%@\n-  Valor de primera cuota    U$S%@", body, cuotaLabel.text];
+   
     
-    if ([tipoPlan isEqualToString:@"PrimerCuota3Meses"] || [tipoPlan isEqualToString:@"TasaLoca"]) {
-        body = [NSString stringWithFormat:@"%@\n\n\n  *Se incluyen gastos de seguro de vida para personas físicas", body];
+    if ([tipoPlan isEqualToString:@"50-50"])
+    {
+        body = [NSString stringWithFormat:@"%@\n-  Cuota mensual    U$S%@", body, cuotaLabel.text];
+    }   
+    else
+    {
+        body = [NSString stringWithFormat:@"%@\n-  Valor de primera cuota    U$S%@", body, cuotaLabel.text];
     }
+    
+    body = [NSString stringWithFormat:@"%@\n\n\n  *Se incluyen gastos de seguro de vida para personas físicas", body];
 
     
-    NSString *email = [[NSString alloc] initWithFormat:@"%@%@", recipients, body];
-    NSString *encodedEmail = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *mail = [[NSString alloc] initWithFormat:@"%@%@", recipients, body];
+    NSString *encodedEmail = [mail stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:encodedEmail]];
 
@@ -274,10 +341,25 @@ NSArray* plazos;
 {
     [super viewDidLoad];
     
+    NSNumberFormatter *numberFormat = [[NSNumberFormatter alloc] init];
+    
+    
+    numberFormat.usesGroupingSeparator = YES;
+    
+    
+    numberFormat.groupingSeparator = @".";
+    
+    
+    numberFormat.groupingSize = 3;
+    
+    
+    
+    NSString *stringNumber = [numberFormat stringFromNumber:[NSNumber numberWithInt:precio]];
+
    
     
     [modeloLabel setText:modelo];
-    [precioLabel setText:[NSString stringWithFormat:@"%d", precio]];
+    [precioLabel setText:[NSString stringWithFormat:@"%@", stringNumber]];
     [porcBancoLabel setText:@"2%"];
     
     
@@ -289,6 +371,8 @@ NSArray* plazos;
         
         plazos = [[NSArray alloc] initWithObjects:@"60 meses", @"48 meses",@"36 meses",@"24 meses",@"18 meses",@"12 meses",nil];
         plazo.text = @"60 meses";
+        entregaLabel.text = @"ENTREGA (Entre 20% y 90%)";
+        tituloLabel.text = @"TASA";
     } else if([tipoPlan isEqualToString:@"TasaLoca"]){
         [tasaLabel setText:@"4.9%"];
         [porcFinanciarLabel setText:[NSString stringWithFormat:@"%d%%", 0]];
@@ -297,6 +381,8 @@ NSArray* plazos;
         
         plazos = [[NSArray alloc] initWithObjects:@"48 meses",@"36 meses",@"24 meses",@"18 meses",@"12 meses",nil];
         plazo.text = @"48 meses";
+        entregaLabel.text = @"ENTREGA (Entre 20% y 90%)";
+         tituloLabel.text = @"TASA BONIFICADA";
     } else if([tipoPlan isEqualToString:@"Ganate1Año"]){
         [tasaLabel setText:@"0.0%"];
         [self.navigationItem setTitle:@"GANATE 1 AÑO"];
@@ -311,9 +397,15 @@ NSArray* plazos;
         plazos = [[NSArray alloc] initWithObjects:@"24 meses",@"18 meses",@"12 meses",nil];
         plazo.text = @"24 meses";
         
+        primerCuota.text = @"CUOTA MENSUAL";
+        
+        textoGastos.text = @"";
+        
         entrega.userInteractionEnabled = NO;
         entrega.borderStyle=UITextBorderStyleNone;
         entrega.text = @"50";
+        
+        tituloLabel.text = @"50-50 0% HASTA 24 CUOTAS";
         
     }
     

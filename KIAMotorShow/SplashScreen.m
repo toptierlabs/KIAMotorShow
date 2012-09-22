@@ -40,7 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self performSelector:@selector(hideSplash) withObject:nil afterDelay:2.0];
+    [self performSelector:@selector(hideSplash) withObject:nil afterDelay:4.0];
 }
 
 

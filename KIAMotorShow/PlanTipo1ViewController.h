@@ -21,6 +21,10 @@
     IBOutlet UILabel * montoEntregaLabel;
     IBOutlet UILabel * porcBancoLabel;
     IBOutlet UILabel * cuotaLabel;
+    IBOutlet UILabel * primerCuota;
+    IBOutlet UILabel * textoGastos;
+    IBOutlet UILabel * entregaLabel;
+    IBOutlet UILabel * tituloLabel;
     
     IBOutlet UITextField * email;
     
@@ -39,7 +43,11 @@
 @property (nonatomic,retain) UILabel* montoEntregaLabel;
 @property (nonatomic,retain) UILabel* porcBancoLabel;
 @property (nonatomic,retain) UILabel* cuotaLabel;
+@property (nonatomic,retain) UILabel* primerCuota;
 @property (nonatomic,retain) UITextField* email;
+@property (nonatomic,retain) UILabel* textoGastos;
+@property (nonatomic,retain) UILabel* entregaLabel;
+@property (nonatomic,retain) UILabel* tituloLabel;
 
 @property (nonatomic,retain) NSString* tipoPlan;
 @property (nonatomic,retain) NSString* modelo;

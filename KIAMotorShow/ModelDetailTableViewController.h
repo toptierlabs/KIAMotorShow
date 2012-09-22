@@ -13,10 +13,12 @@
     NSMutableDictionary* detailsArray;
     
     IBOutlet UITableView *tableView;
+    IBOutlet UIWebView *webView;
 }
 
 @property (nonatomic,retain) NSString* model;
 @property (nonatomic,retain) NSMutableDictionary* detailsArray;
 @property (nonatomic, retain) UITableView *tableView;
+@property (nonatomic, retain) UIWebView* webView;
 
 @end

@@ -12,7 +12,7 @@
 
 @implementation ModelDetailTableViewController
 
-@synthesize model, detailsArray,tableView;
+@synthesize model, detailsArray,tableView,webView;
 
 NSDictionary* modelDetail;
 
@@ -108,28 +108,71 @@ NSInteger sort(id a, id b, void* p) {
 
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    //for hight
+    if ([model isEqualToString:@"Mohave"]) {
+        
+        return 400;
+    }else {
+        return 300;
+    }
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView_param cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView 
+    UITableViewCell *cell = [tableView_param 
                              dequeueReusableCellWithIdentifier:@"ModelDetailCell"];
+    
+
  
     NSLog(@"KEY %@",[sortedKeys objectAtIndex:indexPath.row]);
     
+    NSNumberFormatter *numberFormat = [[NSNumberFormatter alloc] init];
+    
+    
+    numberFormat.usesGroupingSeparator = YES;
+    
+    
+    numberFormat.groupingSeparator = @".";
+    
+    
+    numberFormat.groupingSize = 3;
+    
+    int precioInt = [[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"precio"] intValue];
+
+    
+    NSString *stringNumber = [numberFormat stringFromNumber:[NSNumber numberWithInt:precioInt]];
+
     
     UILabel* titleLabel = (UILabel *)[cell viewWithTag:101];
-    titleLabel.text = [NSString stringWithFormat:@"%@    U$S %d",[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"tipo"],[[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"precio"] integerValue]];
+    titleLabel.text = [NSString stringWithFormat:@"%@",[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"tipo"]];
+    
+    UILabel* precioLabel = (UILabel *)[cell viewWithTag:104];
+    precioLabel.text = [NSString stringWithFormat:@"USD %@",stringNumber];
+
     
 
     [(UIImageView *)[cell viewWithTag:100] setImage:[UIImage imageNamed: [model lowercaseString]]]; 
     
     
-    UILabel* detailsLabel = (UILabel *)[cell viewWithTag:102];
-	detailsLabel.text = [[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"detalle"];
-    detailsLabel.numberOfLines = 0;
+//    UILabel* detailsLabel = (UILabel *)[cell viewWithTag:102];
+//	detailsLabel.text = [[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"detalle"];
+//    detailsLabel.numberOfLines = 0;
+//    
+//    
+//    [detailsLabel sizeToFit];
     
+     UIWebView* detailsWebview = (UIWebView *)[cell viewWithTag:103];
+     [detailsWebview loadHTMLString:[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"detalle"] baseURL:[NSURL URLWithString:@""]];
     
-    [detailsLabel sizeToFit];
+    if ([model isEqualToString:@"Mohave"]) { 
     
+        CGRect tvbounds = [detailsWebview bounds];
+        [detailsWebview setFrame:CGRectMake(20, 
+                                    55, 
+                                    tvbounds.size.width, 
+                                    310)];
+    }
     
     return cell;
 }
@@ -138,7 +181,7 @@ NSInteger sort(id a, id b, void* p) {
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView_param didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     if([model isEqualToString: [[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"tipo"]])
@@ -148,7 +191,7 @@ NSInteger sort(id a, id b, void* p) {
     precio = [[[modelDetail objectForKey:[sortedKeys objectAtIndex:indexPath.row]] objectForKey:@"precio"] integerValue];
     
     //Deselect the row before leaving the method
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];   
+    [tableView_param deselectRowAtIndexPath:indexPath animated:NO];   
     
     [self performSegueWithIdentifier: @"PlansSegue" sender: self];
     

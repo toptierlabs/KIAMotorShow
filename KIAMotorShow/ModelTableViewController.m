@@ -87,9 +87,9 @@
     
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView_param cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView 
+    UITableViewCell *cell = [tableView_param 
                              dequeueReusableCellWithIdentifier:@"ModelCell"];
     
     
@@ -103,12 +103,12 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView_param didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     model = [models objectAtIndex:indexPath.row];
     
     //Deselect the row before leaving the method
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];   
+    [tableView_param deselectRowAtIndexPath:indexPath animated:NO];   
     
     
     //Go to the next view

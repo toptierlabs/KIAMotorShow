@@ -23,6 +23,7 @@
     IBOutlet UITextField * plazoRefi;
     IBOutlet UILabel * comiRefiLabel;
     IBOutlet UILabel * cuotaMensLabel;
+    IBOutlet UILabel * tituloLabel;
     
     IBOutlet UITextField * email;
     
@@ -43,6 +44,7 @@
 @property (nonatomic,retain) UITextField* plazoRefi;
 @property (nonatomic,retain) UILabel* comiRefiLabel;
 @property (nonatomic,retain) UILabel* cuotaMensLabel;
+@property (nonatomic,retain) UILabel* tituloLabel;
 
 
 @property (nonatomic,retain) UITextField* email;

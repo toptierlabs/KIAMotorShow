@@ -11,7 +11,7 @@
 @implementation PlanTipo2ViewController
 
 @synthesize modeloLabel,precioLabel,entregaLabel,tasaLabel,plazo,porcFinanciarLabel,montoFinanciarLabel,plazoRefi,comiRefiLabel;
-@synthesize porcBancoLabel,cuotaMensLabel,cuotaAnualLabel,tipoPlan,modelo,precio,email;
+@synthesize porcBancoLabel,cuotaMensLabel,cuotaAnualLabel,tipoPlan,modelo,precio,email,tituloLabel;
 
 NSString* subject;
 NSArray* plazos;
@@ -68,19 +68,39 @@ NSArray* plazos;
     
     int montoFinanciar = round(precio - montoAdelanto);
     
-    [montoFinanciarLabel setText:[NSString stringWithFormat:@"%d", montoFinanciar]];
+    NSNumberFormatter *numberFormat = [[NSNumberFormatter alloc] init];
+    numberFormat.usesGroupingSeparator = YES;
+    numberFormat.groupingSeparator = @".";
+    numberFormat.groupingSize = 3;
+    NSString *stringNumber = [numberFormat stringFromNumber:[NSNumber numberWithInt:montoFinanciar]];
+    
+    [montoFinanciarLabel setText:[NSString stringWithFormat:@"USD %@", stringNumber]];
 
-    double capital = [montoFinanciarLabel.text doubleValue];
+    double capital = montoFinanciar;
     double ints = capital * tmu;
-    double ivaints = ints * 0.22;
+    //double ivaints = ints * 0.22;
     double cuota = capital / ((1 - pow((1 / (1 + tmi)), cantCuotas)) / tmi);
-    double amortCap = cuota - ints - ivaints;
+    //double amortCap = cuota - ints - ivaints;
     double sv = capital * 0.00060;
     double tcps = (capital + ints) * 0.000332;
     int cuotaTotal = round(cuota + tcps + sv);
     
-    [cuotaAnualLabel setText:[NSString stringWithFormat:@"%d", montoFinanciar]];
-    [cuotaMensLabel  setText:[NSString stringWithFormat:@"%d", cuotaTotal]];
+    
+    numberFormat = [[NSNumberFormatter alloc] init];
+    numberFormat.usesGroupingSeparator = YES;
+    numberFormat.groupingSeparator = @".";
+    numberFormat.groupingSize = 3;
+    stringNumber = [numberFormat stringFromNumber:[NSNumber numberWithInt:montoFinanciar]];
+    
+    [cuotaAnualLabel setText:[NSString stringWithFormat:@"%@", stringNumber]];
+    
+    numberFormat = [[NSNumberFormatter alloc] init];
+    numberFormat.usesGroupingSeparator = YES;
+    numberFormat.groupingSeparator = @".";
+    numberFormat.groupingSize = 3;
+    stringNumber = [numberFormat stringFromNumber:[NSNumber numberWithInt:cuotaTotal]];
+    
+    [cuotaMensLabel  setText:[NSString stringWithFormat:@"USD %@", stringNumber]];
     
     
 }
@@ -138,11 +158,14 @@ NSArray* plazos;
     NSString *body = @"";
     
     body = [NSString stringWithFormat:@"%@\n- Producto    %@", body, modelo];
-    body = [NSString stringWithFormat:@"%@\n- PVP(Precio de venta al público)    U$S%d", body, precio];
-    body = [NSString stringWithFormat:@"%@\n- Entrega    50%",body];
+    body = [NSString stringWithFormat:@"%@\n- PVP(Precio de venta al público)    USD %d", body, precio];
+    body = [NSString stringWithFormat:@"%@\n- Entrega    50%%",body];
     body = [NSString stringWithFormat:@"%@\n- Plazo    %@", body, plazo.text];
-    body = [NSString stringWithFormat:@"%@\n- A Financiar(porcentaje a financiar y monto a financiar)    %@", body,  [NSString stringWithFormat:@"%@-U$S%@", porcFinanciarLabel.text, montoFinanciarLabel.text]];
-    body = [NSString stringWithFormat:@"%@\n-  Valor de primera cuota    U$S%@", body, cuotaMensLabel.text];
+    body = [NSString stringWithFormat:@"%@\n- A Financiar(porcentaje a financiar y monto a financiar)    %@", body,  [NSString stringWithFormat:@"%@ - %@", porcFinanciarLabel.text, montoFinanciarLabel.text]];
+     body = [NSString stringWithFormat:@"%@\n\n Refinanciamiento\n",body];
+    body = [NSString stringWithFormat:@"%@\n  -  Valor de primera cuota    %@", body, cuotaMensLabel.text];
+    
+    body = [NSString stringWithFormat:@"%@\n\n  La presente cotización es válida por 30 días", body];
     
     
     body = [NSString stringWithFormat:@"%@\n\n\n  *Se incluyen gastos de seguro de vida para personas físicas", body];
@@ -165,19 +188,19 @@ NSArray* plazos;
     switch (result)
     {
         case MFMailComposeResultCancelled:
-            message = @"Canceled";
+            message = @"Cancelado";
             break;
         case MFMailComposeResultSaved:
-            message = @"Saved";
+            message = @"Salvado";
             break;
         case MFMailComposeResultSent:
-            message = @"Sent";
+            message = @"Enviado";
             break;
         case MFMailComposeResultFailed:
-            message = @"Failed";
+            message = @"Falló";
             break;
         default:
-            message = @"Not sent";
+            message = @"No enviado";
             break;
     }
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:message
@@ -213,8 +236,8 @@ NSArray* plazos;
 
     
     
-    NSString *email = [[NSString alloc] initWithFormat:@"%@%@", recipients, body];
-    NSString *encodedEmail = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * mail = [[NSString alloc] initWithFormat:@"%@%@", recipients, body];
+    NSString *encodedEmail = [mail stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:encodedEmail]];
     
@@ -234,7 +257,24 @@ NSArray* plazos;
     plazoRefi.text = @"12 meses";
     
     [modeloLabel setText:modelo];
-    [precioLabel setText:[NSString stringWithFormat:@"%d", precio]];
+    
+    
+    NSNumberFormatter *numberFormat = [[NSNumberFormatter alloc] init];
+    
+    
+    numberFormat.usesGroupingSeparator = YES;
+    
+    
+    numberFormat.groupingSeparator = @".";
+    
+    
+    numberFormat.groupingSize = 3;
+    
+    
+    
+    NSString *stringNumber = [numberFormat stringFromNumber:[NSNumber numberWithInt:precio]];
+    
+    [precioLabel setText:[NSString stringWithFormat:@"%@", stringNumber]];
 
     
     [tasaLabel setText:@"0.0%"];
@@ -264,6 +304,8 @@ NSArray* plazos;
     
     plazoRefi.inputView = pickerViewFrom;
     plazoRefi.inputAccessoryView = toolbar;
+    
+    tituloLabel.text = @"50-50 0% 1 SOLO PAGO";
 }
 
 
